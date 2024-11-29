@@ -1,0 +1,145 @@
+#instagram-container-block-1 {
+    align-self: center;
+    flex-basis: 30%;
+}
+
+#instagram-container-block-1 .decoration-line {
+    margin: 0;
+}
+
+#instagram-container-block-2 {
+    width: 400px;
+    justify-content: end;
+}
+
+.instagram-img-container {
+    height: 220px;
+    margin: 0 10px 10px 0;
+    width: 170px;
+}
+
+.instagram-img-container .social-media-icons {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+
+.instagram-img-container:hover .social-media-icons {
+    opacity: 1;
+}
+
+.instagram-img-container:hover .zoom-img {
+    filter: opacity(50%);
+}
+
+#instagram-container-block-1 .btn-container {
+    text-align: left;
+}
+
+.social-media-icons {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 25px;
+    font-size: 21px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.social-media-icons:hover {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.description-title {
+    margin-bottom: 30px;
+}
+
+#footer-content {
+    padding: 300px 0 30px 0;
+}
+
+.footer-link {
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.footer-link:hover {
+    color: rgb(20, 105, 46);
+}
+
+@media screen and (max-width: 1023px) {
+
+    #instagram-container {
+        padding-bottom: 150px;
+    }
+
+    #instagram-container-block-1 {
+        flex-basis: 35%;
+    }
+
+    .instagram-img-container {
+        height: 210px;
+    }
+
+    #footer-content {
+        padding-top: calc(400px / 2 / 2 + 50px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .social-media-icons {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+
+    #instagram-container {
+        padding-bottom: 50px;
+    }
+
+    #instagram-container-block-1 {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+    #instagram-container-block-2 {
+        width: 300px;
+    }
+
+    .instagram-img-container {
+        height: 170px;
+        width: 130px;
+    }
+
+    .description-title {
+        margin-bottom: 20px;
+    }
+
+    #footer-content {
+        padding-top: 330px;
+    }
+
+    #footer-social-media-block {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .footer-link {
+        font-size: 18px;
+    }
+}

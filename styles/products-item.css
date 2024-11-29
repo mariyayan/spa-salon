@@ -1,0 +1,38 @@
+.products-item {
+    margin-right: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+.products-item:hover {
+    cursor: pointer;
+}
+
+.product-item-img {
+    height: 200px;
+    width: 195px;
+    margin: 0 auto;
+}
+
+.products-item-text {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .products-item {
+        width: 200px;
+    }
+
+    .product-item-img {
+        height: 170px;
+        width: 170px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .products-item {
+        width: 300px;
+    }
+}

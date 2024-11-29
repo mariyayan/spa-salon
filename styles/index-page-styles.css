@@ -1,0 +1,338 @@
+#treatments-img-container {
+    width: 300px;
+    height: 400px;
+}
+
+#treatment-types {
+    width: 65%;
+    margin-left: 30px;
+}
+
+.treatment-types-block {
+    border-top: solid rgb(200, 200, 200) 1px;
+    width: 45%;
+}
+
+#treatment-types .btns-container {
+    flex-grow: 3;
+}
+
+.treatment-types-block h6 {
+    letter-spacing: 1px;
+}
+
+.testimonials-block {
+    width: 30%;
+}
+
+.testimonials-img {
+    width: 220px;
+    height: 330px;
+    margin-bottom: 40px;
+}
+
+.testimonials-name {
+    color: black;
+    font-size: 21px;
+}
+
+.testimonials-title {
+    letter-spacing: 1px;
+    color: rgb(20, 105, 46);
+    font-size: 18px;
+}
+
+#relax-block-1 {
+    width: 45%;
+    margin-right: 30px;
+}
+
+#relax-block-1 .white-btn {
+    margin-right: 40px;
+}
+
+#relax-block-2 {
+    width: 450px;
+    height: 350px;
+}
+
+#make-reservation-container-wrapper {
+    padding: 100px 0;
+    background-image: url('../img/08.webp');
+    background-size: cover;
+}
+
+#make-reservation-container {
+    text-align: center;
+}
+
+#products-arrows {
+    margin: 40px 0;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+#products-arrow-left,
+#products-arrow-right {
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#products-arrow-left:hover,
+#products-arrow-right:hover {
+    cursor: pointer;
+}
+
+#products-arrow-left {
+    margin-right: 20px;
+}
+
+#products-container-wrapper {
+    width: calc((250px * 3) + 60px);
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+#products-container {
+    width: max-content;
+}
+
+#locations-flex-container {
+    width: 1000px;
+}
+
+#locations .contacts-over-section {
+    z-index: 1;
+}
+
+#locations-img {
+    width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+#locations-flex-container .location-address {
+    margin-bottom: 30px;
+}
+
+#news .flex-container:nth-of-type(1) {
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+#news h2 {
+    text-align: center;
+}
+
+#news .btns-container {
+    padding: 0 30px;
+    margin-top: 0;
+}
+
+.news-item {
+    width: 45%;
+}
+
+.news-item-img {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#news h4 {
+    margin: 30px 0;
+    color: black;
+}
+
+.news-item time {
+    color: rgb(100, 100, 100);
+}
+
+@media screen and (max-width: 1023px) {
+
+    #treatments-flex-container {
+        flex-direction: column;
+    }
+
+    #treatments-img-container {
+        order: 2;
+        width: 290px;
+        height: 430px;
+        align-self: center;
+    }
+
+    #treatment-types {
+        width: 95%;
+        margin: 0 0 90px 0;
+    }
+
+    .treatment-types-block {
+        margin-bottom: 50px;
+    }
+
+    #locations-img {
+        width: 700px;
+        height: 450px;
+    }
+
+    #locations-flex-container {
+        width: 700px;
+    }
+
+    #locations-flex-container .location-address {
+        margin-bottom: 15px;
+    }
+
+    #testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-img {
+        margin: 0 auto 30px auto;
+    }
+
+    .testimonials-block {
+        margin-bottom: 50px;
+        width: 70%;
+    }
+
+    .testimonials-name,
+    .testimonials-title {
+        text-align: center;
+    }
+
+    .testimonials-text {
+        font-size: 17px;
+    }
+
+    #relax-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #relax-block-1 {
+        margin-right: 0;
+    }
+
+    #relax-block-1 {
+        width: 100%;
+    }
+
+    #relax-block-1 {
+        margin-bottom: 100px;
+    }
+
+    #relax .btns-container {
+        text-align: center;
+    }
+
+    #relax .first-btn {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    #make-reservation-container {
+        width: 90%;
+    }
+
+    #products-caurosel .block {
+        width: 95%;
+    }
+
+    #products-container-wrapper {
+        width: calc(200px * 3 + 60px);
+    }
+
+    #news .flex-container:nth-of-type(1) {
+        flex-direction: column;
+    }
+
+    .news-item {
+        width: 47%;
+    }
+
+    .news-item-img {
+        width: 330px;
+        height: 230px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #treatment-types {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+
+    .treatment-types-block {
+        width: 100%;
+    }
+
+    .testimonials-text {
+        text-align: center;
+    }
+
+    .testimonials-block {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .testimonials-img {
+        width: 160px;
+        height: 250px;
+    }
+
+    .testimonials-block:not(.testimonials-block:last-child) {
+        margin-bottom: 110px;
+    }
+
+    #relax-block-1 {
+        width: 90%;
+    }
+
+    #relax-block-1 .white-btn {
+        margin-right: auto;
+    }
+
+    #relax-block-2 {
+        width: 300px;
+        height: 230px;
+    }
+
+    #products-container-wrapper {
+        width: 300px;
+    }
+
+    #locations-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #locations-flex-container {
+        width: 400px;
+    }
+
+
+    .news-item {
+        width: 100%;
+    }
+
+    .news-item:nth-of-type(1) {
+        margin-bottom: 80px;
+    }
+
+    .news-item-img {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 479px) {
+
+
+    #locations-img,
+    #locations-flex-container,
+    .news-item-img {
+        width: 290px;
+    }
+}

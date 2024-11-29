@@ -1,0 +1,225 @@
+#contact #header {
+    margin-bottom: 0 !important;
+}
+
+#contacts-title {
+    padding: 100px 0 calc(705px / 2) 150px;
+}
+
+#contacts {
+    padding: 150px 0 0 60px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.contacts-block {
+    padding: 30px 15px;
+    background-color: white;
+    width: 35%;
+}
+
+.contacts-block:first-child {
+    margin-bottom: 40px;
+}
+
+.contacts-link {
+    margin-top: 10px;
+}
+
+#contacts-form {
+    position: absolute;
+    top: calc(-705px / 2);
+    right: 0;
+    width: 570px;
+    height: 705px;
+    background-color: white;
+    padding: 50px 20px;
+    border: solid rgb(200, 200, 200) 1px;
+}
+
+.contacts-form-field {
+    width: 45%;
+    height: 91px;
+    margin-bottom: 20px;
+}
+
+.contacts-form-field label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contacts-form-field input,
+.contacts-form-field select,
+.contacts-form-field textarea {
+    padding-left: 10px;
+    color: rgb(150, 150, 150);
+    outline: none;
+    width: 100%;
+    height: 35px;
+}
+
+.contacts-form-field:nth-of-type(7) {
+    width: 100%;
+    height: 151px;
+}
+
+.contacts-form-field textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contacts-form-field select {
+    background-color: white;
+    color: rgb(200, 200, 200);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255);
+}
+
+.contacts-form-field select:focus {
+    border: solid rgb(20, 105, 46) 1px;
+}
+
+.contacts-form-field option {
+    color: rgb(200, 200, 200);
+}
+
+
+.contacts-form-field input:invalid {
+    border: solid red 1px;
+}
+
+.contacts-form-field input:focus,
+.contacts-form-field textarea:focus {
+    border: solid rgb(20, 105, 46) 1px;
+}
+
+#contacts-form-btn {
+    margin: 0 auto;
+}
+
+.rotate-arrow {
+    transform: rotate(90deg);
+}
+
+#contacts-form-btn .green-btn {
+    max-width: 100%;
+}
+
+#faq {
+    padding: 150px 0 0 0;
+    border-top: solid rgb(200, 200, 200) 1px;
+    border-bottom: solid rgb(200, 200, 200) 1px;
+}
+
+.faq-item {
+    border-bottom: solid rgb(200, 200, 200) 1px;
+    padding: 30px 0;
+}
+
+.faq-item:hover {
+    cursor: pointer;
+}
+
+.faq-item:first-child {
+    border-top: solid rgb(200, 200, 200) 1px;
+}
+
+.faq-item h4 {
+    margin-bottom: 10px;
+}
+
+.faq-item:hover h4 {
+    color: rgb(70, 70, 70);
+}
+
+.faq-item .faq-arrow {
+    font-size: 38px;
+    color: rgb(20, 105, 46);
+}
+
+.faq-answer {
+    height: 0;
+    opacity: 0;
+
+    -webkit-transition: height 300ms linear, color 300ms linear;
+    -moz-transition: height 300ms linear, color 300ms linear;
+    -o-transition: height 300ms linear, color 300ms linear;
+    -ms-transition: height 300ms linear, color 300ms linear;
+    transition: height 300ms linear, color 300ms linear;
+}
+
+.faq-item:hover .faq-answer {
+    color: rgb(170, 170, 170);
+}
+
+
+
+@media screen and (max-width: 1023px) {
+
+    #contacts-title {
+        padding: 0 0 calc(1050px / 2 + 70px) 0;
+        text-align: center;
+    }
+
+    #contacts {
+        padding: calc(1050px / 2 + 90px) 0 0 100px;
+    }
+
+    .contacts-block {
+        width: 70%;
+    }
+
+    #contacts-form {
+        height: 1050px;
+        width: 600px;
+        top: calc(-1050px / 2);
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contacts-form-field {
+        width: 100%;
+    }
+
+    #faq {
+        padding: 90px 45px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contacts {
+        padding: calc(1050px / 2 + 90px) 0 0 0;
+        text-align: center;
+    }
+
+    #contacts-form {
+        width: 350px;
+    }
+
+    #contacts-title {
+        padding: 0 0 calc(1050px / 2 + 70px) 0;
+    }
+
+    .contacts-block {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #faq {
+        padding: 40px 0;
+    }
+
+    .faq-item {
+        padding: 15px 0;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+
+    #contacts-form {
+        width: 300px;
+    }
+}

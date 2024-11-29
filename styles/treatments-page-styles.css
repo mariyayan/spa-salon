@@ -1,0 +1,152 @@
+#treatments-container .view {
+    width: 90%;
+}
+
+.treatments-item {
+    width: 35%;
+    margin: 0 70px 90px 0;
+    cursor: pointer;
+}
+
+.treatments-item-img {
+    width: 300px;
+    height: 450px;
+    margin: 0 auto 40px auto;
+}
+
+.treatments-item h6 {
+    margin-bottom: 15px;
+}
+
+.treatments-list {
+    margin-top: 20px;
+}
+
+#treatments-view-block-list {
+    margin: 15px 0 30px 0;
+}
+
+.treatments-item .treatment-type::before,
+#treatments-view-block-list .treatment-type::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.treatments-item .treatment-type::before {
+    background-color: rgb(20, 105, 46);
+}
+
+#treatments-view-block-list .treatment-type::before {
+    background-color: rgb(100, 100, 100);
+}
+
+.treatment-type {
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+
+.treatments-item .treatment-type {
+    margin-bottom: 15px;
+}
+
+#treatments-view-block-list .treatment-type {
+    margin-bottom: 25px;
+}
+
+.treatments-view-block {
+    width: 45%;
+}
+
+.treatments-view-block h3:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.treatments-view-block:nth-of-type(2) {
+    border: solid rgb(200, 200, 200) 1px;
+    padding: 20px 0;
+}
+
+.treatments-view-info-block {
+    padding: 10px 5px;
+}
+
+#treatments-container .view .info-container {
+    margin-bottom: 10px;
+}
+
+#treatments-description {
+    padding: 0 5px;
+}
+
+#treatments-description-title {
+    margin-bottom: 14px;
+}
+
+.treatments-view-info-block:nth-of-type(2),
+.treatments-view-info-block:nth-of-type(3) {
+    border-bottom: solid rgb(200, 200, 200) 1px;
+}
+
+.treatment-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.treatment-price {
+    letter-spacing: 1px;
+    color: rgb(20, 105, 46);
+    font-size: 18px;
+}
+
+.treatments-view-block .btn-container {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+
+    #treatments-container {
+        width: 90%;
+    }
+
+    #treatments-container .view {
+        flex-direction: column;
+    }
+
+    .treatments-view-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .treatments-item {
+        width: 35%;
+        margin: 0 0 130px 0;
+    }
+
+    .treatments-view-info-block {
+        padding: 15px 5px;
+    }
+
+    .treatments-item-img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .treatments-item .treatment-type {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .treatments-item {
+        width: 90%;
+        text-align: center;
+    }
+}

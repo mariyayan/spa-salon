@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+     <style>
+        #preloader-wrapper, #preloader{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+#preloader-wrapper {
+width: 100%;
+height: 100%;
+z-index: 3;
+background-color: white;
+}
+#preloader {
+width: 100px;
+height: 100px;
+border-radius: 100px;
+bottom: 0;
+margin: auto;
+background: rgb(20, 105, 46);
+background: -moz-linear-gradient(left, rgb(20, 105, 46) 10%, rgba(20, 105, 46, 0) 42%);
+background: -webkit-linear-gradient(left, rgb(20, 105, 46) 10%, rgba(20, 105, 46, 0) 42%);
+background: -o-linear-gradient(left, rgb(20, 105, 46) 10%, rgba(20, 105, 46, 0) 42%);
+background: -ms-linear-gradient(left, rgb(20, 105, 46) 10%, rgba(20, 105, 46, 0) 42%);
+background: linear-gradient(to right, rgb(20, 105, 46) 10%, rgba(20, 105, 46, 0) 42%);
+-ms-animation: loader 1.4s infinite linear;
+-o-animation: loader 1.4s infinite linear;
+-moz-animation: loader 1.4s infinite linear;
+-webkit-animation: loader 1.4s infinite linear;
+animation: loader 1.4s infinite linear;
+}
+.hide-preloader {
+display: none;
+}
+.stop-animation {
+animation-play-state: paused;
+}
+@-webkit-keyframes loader {
+0% {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+  </style>
+    <link rel="stylesheet" type="text/css" href="../dist/styles.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id='header' class='container'>
+        <nav class='flex'>
+            <ul id='nav-menu' class='flex opacity-transition'>
+                <li class='nav-menu-page'><a class='nav-menu-link' href='index.html'>HOME</a></li>
+                <li class='nav-menu-page'><a class='nav-menu-link' href='about.html'>ABOUT</a></li>
+                <li class='nav-menu-page'><a class='nav-menu-link' href='treatments.html'>TREATMENTS</a></li>
+                <li class='nav-menu-page'><a class='nav-menu-link nav-menu-link-active' href='shop.html'>SHOP</a></li>
+                <li class='nav-menu-page'><a class='nav-menu-link' href='contact.html'>CONTACT</a></li>
+            </ul>
+            <div id='logo'>SPA</div>
+            <div id='cart'>CART (0)</div>
+            <div id='burger'>
+                <div class='burger-line'></div>
+                <div class='burger-line'></div>
+                <div class='burger-line'></div>
+            </div>
+        </nav>
+        <div id='header-text-container'>
+            <h1 class='header-title'>Spa is a place to relax and<br> recharge your body</h1>
+            <p id='header-text'>Lorem ipsum dolor sit amet consectetur adipiscing elit non augue libero sed nec<br> suspendisse sapien sed volutpat lorem libero nisl.</p>
+            <div class='btns-container'>
+                <a class='header-btn first-btn' id='header-btn-1' href='#'>MAKE A RESERVATION</a>
+                <a class='header-btn' id='header-btn-2' href='#'>OUR TREATMENTS</a>
+            </div>
+        </div>
+    </header>
+    <div id='shop-container-wrapper' class='block container'>
+        <ul id='shop-menu' class='flex'>
+            <li id='all' class='category-product-active product-menu-option'>All</li>
+            <li id='creams' class='product-menu-option'>Creams</li>
+            <li id='lotions' class='product-menu-option'>Lotions</li>
+            <li id='oils' class='product-menu-option'>Oils</li>
+        </ul>
+        <div id='shop-container' class='flex flex-wrap-container'>
+            <div class='viewer fixed-block opacity-transition'>
+                <div class='view fixed-block'>
+                    <span class="fas fa-times cross"></span>
+                    <div class='img-container shop-item-img'><span class='hide-img'></span><img class='window-content-target' src='' alt='spa-product'></div>
+                    <div class='shop-item-text-content'>
+                        <h6 class='window-content-target shop-item-title'></h6>
+                        <p class='window-content-target shop-item-description'></p>
+                        <p><span>Цена : </span><span class='window-content-target'></span></p>
+                        <input class='shop-item-input' type='number' min='1' max='10' placeholder='0'>
+                        <div class='btn-container'><a href='#' class='green-btn'>ADD TO CART</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-creams active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span><span class='hide-img'></span>
+                    <img class='window-content' src='../img/47.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Cream</h6>
+                    <p class='window-content products-item-text'> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-lotions active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/48.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Lotion</h6>
+                    <p class='window-content products-item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-creams active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/49.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Cream</h6>
+                    <p class='window-content products-item-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-oils active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/50.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Oil</h6>
+                    <p class='window-content  products-item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-lotions active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/51.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Lotion</h6>
+                    <p class='window-content products-item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-oils active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/46.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Oil</h6>
+                    <p class='window-content products-item-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-oils active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/46.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Oil</h6>
+                    <p class='window-content products-item-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-oils active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/46.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'>Oil</h6>
+                    <p class='window-content products-item-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+            <div class='products-item shop-item shop-item-all shop-item-creams active item'>
+                <div class='img-container product-item-img'>
+                    <span class='price'>$ 35 USD</span>
+                    <span class='hide-img'></span>
+                    <img class='window-content' src='../img/46.jpg' alt='spa-product'>
+                </div>
+                <div>
+                    <h6 class='window-content'> Cream</h6>
+                    <p class='window-content products-item-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non augue libero sed nec.</p>
+                    <button class='green-btn'>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <section id='instagram-container' class='flex flex-container block'>
+        <div id='instagram-container-block-1'>
+            <div class='decoration-line'></div>
+            <h2>Follow us on Instagram</h2>
+            <p class='description-title'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class='btn-container'><a class='green-btn' href='#'>FOLLOW US</a></div>
+        </div>
+        <div id='instagram-container-block-2' class='flex flex-wrap-container'>
+            <div class='zoom instagram-img-container img-container'><span class='hide-img'></span><img src='../img/27.webp' alt='spa' class='zoom-img'><a href='#'><span class='fab fa-instagram social-media-icons'></span></a></div>
+            <div class='zoom instagram-img-container img-container'><span class='hide-img'></span><img src='../img/29.webp' alt='spa' class='zoom-img'><a href='#'><span class='fab fa-instagram social-media-icons'></span></a></div>
+            <div class='zoom instagram-img-container img-container'><span class='hide-img'></span><img src='../img/33.webp' alt='spa' class='zoom-img'><a href='#'><span class='fab fa-instagram social-media-icons'></span></a></div>
+            <div class='zoom instagram-img-container img-container'><span class='hide-img'></span><img src='../img/30.webp' alt='spa' class='zoom-img'><a href='#'><span class='fab fa-instagram social-media-icons'></span></a></div>
+        </div>
+    </section>
+    </div>
+    <div id='footer-content' class='contacts-over-section-wrapper green-bg'>
+        <div class='flex flex-container block contacts-over-section'>
+            <div class='box'>
+                <div class='info-icons'><span class="info-icons-icon fas fa-phone"></span></div>
+                <h6 class='box-title'>CONTACT</h6>
+                <ul>
+                    <li class='box-option'><a href='#' class='green-link'>(000) 000 - 0000</a></li>
+                    <li class='box-option'><a href='#' class='green-link'>contact@spa.com</a></li>
+                    <li class='box-option'><a href='#' class='green-link'>appointment@spa.com</a></li>
+                </ul>
+            </div>
+            <div class='box'>
+                <div class='info-icons'><span class="info-icons-icon fas fa-map-marker"></span></div>
+                <h6 class='box-title'>LOCATION</h6>
+                <p class='location-address'>909 49th St Los Angeles, California, <br>90011, United States</p>
+            </div>
+            <div class='box'>
+                <div class='info-icons'><span class="info-icons-icon fa fa-clock-o" aria-hidden="true"></span></div>
+                <h6 class='box-title'>HOURS</h6>
+                <ul>
+                    <li class='box-option'> Monday to Friday
+                        9:00 AM - 9:00 PM</li>
+                    <li class='box-option'> Saturday
+                        9:00AM - 5:00PM</li>
+                    <li class='box-option'>Sunday
+                        9:00 AM - 4:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <footer class='flex flex-container block'>
+            <div id='footer-social-media-block'>
+                <h3>SPA</h3>
+                <p class='description-title'>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit feugiat tincidunt morbi pretium.</p>
+                <div><a href='#'><span class="fab fa-facebook social-media-icons"></span></a>
+                    <a href='#'><span class="fab fa-twitter social-media-icons"></span></a>
+                    <a href='#'><span class="fab fa-youtube social-media-icons"></span></a>
+                    <a href='#'><span class="fab fa-instagram social-media-icons"></span></a>
+                </div>
+            </div>
+            <div>
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href='#' class='footer-link'>Home</a></li>
+                    <li><a href='#' class='footer-link'>About</a></li>
+                    <li><a href='#' class='footer-link'>Treatments</a></li>
+                    <li><a href='#' class='footer-link'>Shop</a></li>
+                    <li><a href='#' class='footer-link'>Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="../dist/main.bundle.js"></script>
+</body>
+
+</html>
